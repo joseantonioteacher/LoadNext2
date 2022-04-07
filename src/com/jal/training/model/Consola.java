@@ -5,7 +5,7 @@ public class Consola extends Producto {
 	private String version = null;
 	
 	public Consola() {
-		super();		
+		super();	 	
 	}
 
 	public String getVersion() {
