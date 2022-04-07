@@ -1,0 +1,184 @@
+2021-02-18 10:41:07.108 ERROR MailServiceImpl.sendEmail:37 - joseantoniolp.teacher@gmail.com
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.googlemail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.testSendEmail(MailServiceTest.java:21) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.main(MailServiceTest.java:30) [bin/:?]
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y1sm8185169wrr.41 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673) ~[smtp.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:317) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:176) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:125) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send0(Transport.java:194) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send(Transport.java:124) ~[mailapi.jar:1.4.5]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	... 4 more
+2021-02-18 10:41:07.108 ERROR MailServiceImpl.sendEmail:37 - joseantoniolp.teacher@gmail.com
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.googlemail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.testSendEmail(MailServiceTest.java:21) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.main(MailServiceTest.java:30) [bin/:?]
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y1sm8185169wrr.41 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673) ~[smtp.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:317) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:176) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:125) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send0(Transport.java:194) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send(Transport.java:124) ~[mailapi.jar:1.4.5]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	... 4 more
+2021-02-18 10:41:07.121 ERROR MailServiceTest.testSendEmail:23 - joseantoniolp.teacher@gmail.com
+com.sara.happypets.service.MailException: joseantoniolp.teacher@gmail.com: Hola: Test OK
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:38) ~[bin/:?]
+	at com.sara.happypets.service.MailServiceTest.testSendEmail(MailServiceTest.java:21) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.main(MailServiceTest.java:30) [bin/:?]
+Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.googlemail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) ~[bin/:?]
+	... 2 more
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y1sm8185169wrr.41 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673) ~[smtp.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:317) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:176) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:125) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send0(Transport.java:194) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send(Transport.java:124) ~[mailapi.jar:1.4.5]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) ~[bin/:?]
+	... 2 more
+2021-02-18 10:41:07.121 ERROR MailServiceTest.testSendEmail:23 - joseantoniolp.teacher@gmail.com
+com.sara.happypets.service.MailException: joseantoniolp.teacher@gmail.com: Hola: Test OK
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:38) ~[bin/:?]
+	at com.sara.happypets.service.MailServiceTest.testSendEmail(MailServiceTest.java:21) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.main(MailServiceTest.java:30) [bin/:?]
+Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.googlemail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) ~[bin/:?]
+	... 2 more
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y1sm8185169wrr.41 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673) ~[smtp.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:317) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:176) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:125) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send0(Transport.java:194) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send(Transport.java:124) ~[mailapi.jar:1.4.5]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) ~[bin/:?]
+	... 2 more
+2021-02-18 13:29:31.222 TRACE MailServiceTest.testSendEmail:18 - Enter
+2021-02-18 13:29:37.058 ERROR MailServiceImpl.sendEmail:37 - joseantoniolp.teacher@gmail.com
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.googlemail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.testSendEmail(MailServiceTest.java:21) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.main(MailServiceTest.java:30) [bin/:?]
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z190sm2775523wme.15 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673) ~[smtp.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:317) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:176) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:125) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send0(Transport.java:194) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send(Transport.java:124) ~[mailapi.jar:1.4.5]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	... 4 more
+2021-02-18 13:29:37.074 ERROR MailServiceTest.testSendEmail:23 - joseantoniolp.teacher@gmail.com
+com.sara.happypets.service.MailException: joseantoniolp.teacher@gmail.com: Hola: Test OK
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:38) ~[bin/:?]
+	at com.sara.happypets.service.MailServiceTest.testSendEmail(MailServiceTest.java:21) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.main(MailServiceTest.java:30) [bin/:?]
+Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.googlemail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) ~[bin/:?]
+	... 2 more
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z190sm2775523wme.15 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673) ~[smtp.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:317) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:176) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:125) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send0(Transport.java:194) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send(Transport.java:124) ~[mailapi.jar:1.4.5]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) ~[bin/:?]
+	... 2 more
+2021-02-18 13:29:37.075 TRACE MailServiceTest.testSendEmail:25 - Exit
+2021-02-18 13:30:02.776 TRACE MailServiceTest.testSendEmail:18 - Enter
+2021-02-18 13:30:08.413 ERROR MailServiceImpl.sendEmail:37 - joseantoniolp.teacher@gmail.com
+org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.googlemail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.testSendEmail(MailServiceTest.java:21) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.main(MailServiceTest.java:30) [bin/:?]
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m3sm7451957wmb.19 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673) ~[smtp.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:317) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:176) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:125) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send0(Transport.java:194) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send(Transport.java:124) ~[mailapi.jar:1.4.5]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	... 4 more
+2021-02-18 13:30:08.431 ERROR MailServiceTest.testSendEmail:23 - joseantoniolp.teacher@gmail.com
+com.sara.happypets.service.MailException: joseantoniolp.teacher@gmail.com: Hola: Test OK
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:38) ~[bin/:?]
+	at com.sara.happypets.service.MailServiceTest.testSendEmail(MailServiceTest.java:21) [bin/:?]
+	at com.sara.happypets.service.MailServiceTest.main(MailServiceTest.java:30) [bin/:?]
+Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.googlemail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) ~[bin/:?]
+	... 2 more
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m3sm7451957wmb.19 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756) ~[smtp.jar:1.4.5]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673) ~[smtp.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:317) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:176) ~[mailapi.jar:1.4.5]
+	at javax.mail.Service.connect(Service.java:125) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send0(Transport.java:194) ~[mailapi.jar:1.4.5]
+	at javax.mail.Transport.send(Transport.java:124) ~[mailapi.jar:1.4.5]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.sara.happypets.service.impl.MailServiceImpl.sendEmail(MailServiceImpl.java:35) ~[bin/:?]
+	... 2 more
+2021-02-18 13:30:08.433 TRACE MailServiceTest.testSendEmail:25 - Exit
