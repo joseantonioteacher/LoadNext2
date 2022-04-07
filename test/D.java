@@ -7,9 +7,14 @@ import java.util.Date;
 public class D {
 
 	
-	
+	/**
+	 * Docuemtacion del metodo
+	 * @param objects
+	 * @return
+	 */
 	public static final String append(String... objects) {
 		StringBuilder sb = new StringBuilder();
+		System.out.println();
 		for (Object o: objects) {
 			sb.append(o);
 		}
