@@ -8,7 +8,16 @@ public class Usuario {
 	private String email;
 	private String nombre;
 	private Date fechaNacimiento;
+	private String Comentario;
 	
+	public String getComentario() {
+		return Comentario;
+	}
+
+	public void setComentario(String comentario) {
+		Comentario = comentario;
+	}
+
 	public Usuario() {		
 	}
 
